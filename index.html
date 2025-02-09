@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .profile-card {
+            width: 100%;
+            max-width: 1200px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #fdeedc;
+            padding: 40px;
+            text-align: right;
+            position: relative;
+        }
+        .header h2 {
+            font-size: 28px;
+            margin: 0;
+            line-height: 1.5;
+            color: #333;
+            text-align: right;
+            margin-left: 150px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            top: 100px;
+            left: 40px;
+        }
+        .content {
+            display: flex;
+            padding: 160px 40px 40px;
+            justify-content: space-between;
+        }
+        .content-left {
+            flex: 2;
+        }
+        .content-right {
+            flex: 1;
+            padding-left: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        p.location {
+            color: gray;
+            font-size: 14px;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        p.location::before {
+            content: '\1F4CD';
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        p.description {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .button-container {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .button-container button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .icon-buttons {
+            display: flex;
+        }
+        .icon-buttons button {
+            background: #eee;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-buttons button:first-child::before {
+            content: '\2709'; /* Envelope icon */
+        }
+        .icon-buttons button:last-child::before {
+            content: '\1F4C5'; /* Calendar icon */
+        }
+        .skills {
+            margin-top: 20px;
+        }
+        .skills span {
+            background: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .skills a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="header">
+            <h2>Extend your team’s capacity with rockstar L&D talent</h2>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h1>Jessica P</h1>
+                <p class="location">Colorado, USA</p>
+                <p class="description">Product visual designer, expert in UI design</p>
+                <div class="button-container">
+                    <button>Invite to project</button>
+                    <div class="icon-buttons">
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="skills">
+                    <h3>Languages</h3>
+                    <span>English: Fluent</span>
+                    <span>Spanish: Basic</span>
+                    <span>German: Native</span>
+                    <a href="#">+3 more</a>
+                </div>
+                <div class="skills">
+                    <h3>Featured skills (4)</h3>
+                    <span>Google Ads Management</span>
+                    <span>Social Ads Management</span>
+                    <span>Content SEO</span>
+                    <span>Content SEO</span>
+                    <a href="#">+22 more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
